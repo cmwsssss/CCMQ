@@ -1,0 +1,16 @@
+PODS:
+  - CCMQ (1.0.0)
+
+DEPENDENCIES:
+  - CCMQ (from `/Users/cmw/projects/CCMQ/Core/CCMQ/CCMQ`)
+
+EXTERNAL SOURCES:
+  CCMQ:
+    :path: "/Users/cmw/projects/CCMQ/Core/CCMQ/CCMQ"
+
+SPEC CHECKSUMS:
+  CCMQ: 4d3d8dcc755c6f420c1d35b92cfdd33e45d7a38b
+
+PODFILE CHECKSUM: 4014306bf302e7d2a48b517db32e5fa678e1257e
+
+COCOAPODS: 1.11.2

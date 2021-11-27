@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBEE49E92752517A00FB5186 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE49E82752517A00FB5186 /* AppDelegate.m */; };
+		DBEE49EC2752517A00FB5186 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE49EB2752517A00FB5186 /* SceneDelegate.m */; };
+		DBEE49EF2752517A00FB5186 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE49EE2752517A00FB5186 /* ViewController.m */; };
+		DBEE49F22752517A00FB5186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEE49F02752517A00FB5186 /* Main.storyboard */; };
+		DBEE49F42752517B00FB5186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEE49F32752517B00FB5186 /* Assets.xcassets */; };
+		DBEE49F72752517B00FB5186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEE49F52752517B00FB5186 /* LaunchScreen.storyboard */; };
+		DBEE49FA2752517B00FB5186 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE49F92752517B00FB5186 /* main.m */; };
+		DBEE4A042752517B00FB5186 /* CCMQExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE4A032752517B00FB5186 /* CCMQExampleTests.m */; };
+		DBEE4A0E2752517B00FB5186 /* CCMQExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE4A0D2752517B00FB5186 /* CCMQExampleUITests.m */; };
+		DBEE4A102752517B00FB5186 /* CCMQExampleUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE4A0F2752517B00FB5186 /* CCMQExampleUITestsLaunchTests.m */; };
+		DBEE4A1F27525A0200FB5186 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE4A1E27525A0200FB5186 /* View.m */; };
+		E65CE139CC4CE2C1A079B338 /* Pods_CCMQExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0525C210271CE3DF6F728B6C /* Pods_CCMQExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBEE4A002752517B00FB5186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBEE49DC2752517A00FB5186 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBEE49E32752517A00FB5186;
+			remoteInfo = CCMQExample;
+		};
+		DBEE4A0A2752517B00FB5186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBEE49DC2752517A00FB5186 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBEE49E32752517A00FB5186;
+			remoteInfo = CCMQExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0525C210271CE3DF6F728B6C /* Pods_CCMQExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCMQExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66805C1C2C88DEDB7A2641EE /* Pods-CCMQExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCMQExample.release.xcconfig"; path = "Target Support Files/Pods-CCMQExample/Pods-CCMQExample.release.xcconfig"; sourceTree = "<group>"; };
+		D0744BA2A1B92A010C192250 /* Pods-CCMQExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCMQExample.debug.xcconfig"; path = "Target Support Files/Pods-CCMQExample/Pods-CCMQExample.debug.xcconfig"; sourceTree = "<group>"; };
+		DBEE49E42752517A00FB5186 /* CCMQExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCMQExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEE49E72752517A00FB5186 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBEE49E82752517A00FB5186 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DBEE49EA2752517A00FB5186 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DBEE49EB2752517A00FB5186 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DBEE49ED2752517A00FB5186 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DBEE49EE2752517A00FB5186 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DBEE49F12752517A00FB5186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBEE49F32752517B00FB5186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBEE49F62752517B00FB5186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBEE49F82752517B00FB5186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEE49F92752517B00FB5186 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBEE49FF2752517B00FB5186 /* CCMQExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCMQExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEE4A032752517B00FB5186 /* CCMQExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMQExampleTests.m; sourceTree = "<group>"; };
+		DBEE4A092752517B00FB5186 /* CCMQExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCMQExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEE4A0D2752517B00FB5186 /* CCMQExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMQExampleUITests.m; sourceTree = "<group>"; };
+		DBEE4A0F2752517B00FB5186 /* CCMQExampleUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMQExampleUITestsLaunchTests.m; sourceTree = "<group>"; };
+		DBEE4A1D27525A0200FB5186 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		DBEE4A1E27525A0200FB5186 /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBEE49E12752517A00FB5186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65CE139CC4CE2C1A079B338 /* Pods_CCMQExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEE49FC2752517B00FB5186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEE4A062752517B00FB5186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E6C8F9046ABA774C6913519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0525C210271CE3DF6F728B6C /* Pods_CCMQExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F828E2130DCB473DD64C45A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0744BA2A1B92A010C192250 /* Pods-CCMQExample.debug.xcconfig */,
+				66805C1C2C88DEDB7A2641EE /* Pods-CCMQExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBEE49DB2752517A00FB5186 = {
+			isa = PBXGroup;
+			children = (
+				DBEE49E62752517A00FB5186 /* CCMQExample */,
+				DBEE4A022752517B00FB5186 /* CCMQExampleTests */,
+				DBEE4A0C2752517B00FB5186 /* CCMQExampleUITests */,
+				DBEE49E52752517A00FB5186 /* Products */,
+				9F828E2130DCB473DD64C45A /* Pods */,
+				7E6C8F9046ABA774C6913519 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBEE49E52752517A00FB5186 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE49E42752517A00FB5186 /* CCMQExample.app */,
+				DBEE49FF2752517B00FB5186 /* CCMQExampleTests.xctest */,
+				DBEE4A092752517B00FB5186 /* CCMQExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBEE49E62752517A00FB5186 /* CCMQExample */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE4A1D27525A0200FB5186 /* View.h */,
+				DBEE4A1E27525A0200FB5186 /* View.m */,
+				DBEE49E72752517A00FB5186 /* AppDelegate.h */,
+				DBEE49E82752517A00FB5186 /* AppDelegate.m */,
+				DBEE49EA2752517A00FB5186 /* SceneDelegate.h */,
+				DBEE49EB2752517A00FB5186 /* SceneDelegate.m */,
+				DBEE49ED2752517A00FB5186 /* ViewController.h */,
+				DBEE49EE2752517A00FB5186 /* ViewController.m */,
+				DBEE49F02752517A00FB5186 /* Main.storyboard */,
+				DBEE49F32752517B00FB5186 /* Assets.xcassets */,
+				DBEE49F52752517B00FB5186 /* LaunchScreen.storyboard */,
+				DBEE49F82752517B00FB5186 /* Info.plist */,
+				DBEE49F92752517B00FB5186 /* main.m */,
+			);
+			path = CCMQExample;
+			sourceTree = "<group>";
+		};
+		DBEE4A022752517B00FB5186 /* CCMQExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE4A032752517B00FB5186 /* CCMQExampleTests.m */,
+			);
+			path = CCMQExampleTests;
+			sourceTree = "<group>";
+		};
+		DBEE4A0C2752517B00FB5186 /* CCMQExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBEE4A0D2752517B00FB5186 /* CCMQExampleUITests.m */,
+				DBEE4A0F2752517B00FB5186 /* CCMQExampleUITestsLaunchTests.m */,
+			);
+			path = CCMQExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBEE49E32752517A00FB5186 /* CCMQExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEE4A132752517B00FB5186 /* Build configuration list for PBXNativeTarget "CCMQExample" */;
+			buildPhases = (
+				47F7781CF0F5CA85381A74AC /* [CP] Check Pods Manifest.lock */,
+				DBEE49E02752517A00FB5186 /* Sources */,
+				DBEE49E12752517A00FB5186 /* Frameworks */,
+				DBEE49E22752517A00FB5186 /* Resources */,
+				E73854C6A77614C0DD644C6B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCMQExample;
+			productName = CCMQExample;
+			productReference = DBEE49E42752517A00FB5186 /* CCMQExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBEE49FE2752517B00FB5186 /* CCMQExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEE4A162752517B00FB5186 /* Build configuration list for PBXNativeTarget "CCMQExampleTests" */;
+			buildPhases = (
+				DBEE49FB2752517B00FB5186 /* Sources */,
+				DBEE49FC2752517B00FB5186 /* Frameworks */,
+				DBEE49FD2752517B00FB5186 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBEE4A012752517B00FB5186 /* PBXTargetDependency */,
+			);
+			name = CCMQExampleTests;
+			productName = CCMQExampleTests;
+			productReference = DBEE49FF2752517B00FB5186 /* CCMQExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBEE4A082752517B00FB5186 /* CCMQExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEE4A192752517B00FB5186 /* Build configuration list for PBXNativeTarget "CCMQExampleUITests" */;
+			buildPhases = (
+				DBEE4A052752517B00FB5186 /* Sources */,
+				DBEE4A062752517B00FB5186 /* Frameworks */,
+				DBEE4A072752517B00FB5186 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBEE4A0B2752517B00FB5186 /* PBXTargetDependency */,
+			);
+			name = CCMQExampleUITests;
+			productName = CCMQExampleUITests;
+			productReference = DBEE4A092752517B00FB5186 /* CCMQExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBEE49DC2752517A00FB5186 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					DBEE49E32752517A00FB5186 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					DBEE49FE2752517B00FB5186 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = DBEE49E32752517A00FB5186;
+					};
+					DBEE4A082752517B00FB5186 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = DBEE49E32752517A00FB5186;
+					};
+				};
+			};
+			buildConfigurationList = DBEE49DF2752517A00FB5186 /* Build configuration list for PBXProject "CCMQExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBEE49DB2752517A00FB5186;
+			productRefGroup = DBEE49E52752517A00FB5186 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBEE49E32752517A00FB5186 /* CCMQExample */,
+				DBEE49FE2752517B00FB5186 /* CCMQExampleTests */,
+				DBEE4A082752517B00FB5186 /* CCMQExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBEE49E22752517A00FB5186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEE49F72752517B00FB5186 /* LaunchScreen.storyboard in Resources */,
+				DBEE49F42752517B00FB5186 /* Assets.xcassets in Resources */,
+				DBEE49F22752517A00FB5186 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEE49FD2752517B00FB5186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEE4A072752517B00FB5186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47F7781CF0F5CA85381A74AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCMQExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E73854C6A77614C0DD644C6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCMQExample/Pods-CCMQExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCMQExample/Pods-CCMQExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CCMQExample/Pods-CCMQExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBEE49E02752517A00FB5186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEE4A1F27525A0200FB5186 /* View.m in Sources */,
+				DBEE49EF2752517A00FB5186 /* ViewController.m in Sources */,
+				DBEE49E92752517A00FB5186 /* AppDelegate.m in Sources */,
+				DBEE49FA2752517B00FB5186 /* main.m in Sources */,
+				DBEE49EC2752517A00FB5186 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEE49FB2752517B00FB5186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEE4A042752517B00FB5186 /* CCMQExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEE4A052752517B00FB5186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEE4A0E2752517B00FB5186 /* CCMQExampleUITests.m in Sources */,
+				DBEE4A102752517B00FB5186 /* CCMQExampleUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBEE4A012752517B00FB5186 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBEE49E32752517A00FB5186 /* CCMQExample */;
+			targetProxy = DBEE4A002752517B00FB5186 /* PBXContainerItemProxy */;
+		};
+		DBEE4A0B2752517B00FB5186 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBEE49E32752517A00FB5186 /* CCMQExample */;
+			targetProxy = DBEE4A0A2752517B00FB5186 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBEE49F02752517A00FB5186 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEE49F12752517A00FB5186 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBEE49F52752517B00FB5186 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEE49F62752517B00FB5186 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBEE4A112752517B00FB5186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBEE4A122752517B00FB5186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBEE4A142752517B00FB5186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0744BA2A1B92A010C192250 /* Pods-CCMQExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CCMQExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.CCMQExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBEE4A152752517B00FB5186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66805C1C2C88DEDB7A2641EE /* Pods-CCMQExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CCMQExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.CCMQExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBEE4A172752517B00FB5186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.CCMQExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCMQExample.app/CCMQExample";
+			};
+			name = Debug;
+		};
+		DBEE4A182752517B00FB5186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.CCMQExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCMQExample.app/CCMQExample";
+			};
+			name = Release;
+		};
+		DBEE4A1A2752517B00FB5186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.CCMQExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CCMQExample;
+			};
+			name = Debug;
+		};
+		DBEE4A1B2752517B00FB5186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmw.CCMQExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CCMQExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBEE49DF2752517A00FB5186 /* Build configuration list for PBXProject "CCMQExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEE4A112752517B00FB5186 /* Debug */,
+				DBEE4A122752517B00FB5186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEE4A132752517B00FB5186 /* Build configuration list for PBXNativeTarget "CCMQExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEE4A142752517B00FB5186 /* Debug */,
+				DBEE4A152752517B00FB5186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEE4A162752517B00FB5186 /* Build configuration list for PBXNativeTarget "CCMQExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEE4A172752517B00FB5186 /* Debug */,
+				DBEE4A182752517B00FB5186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEE4A192752517B00FB5186 /* Build configuration list for PBXNativeTarget "CCMQExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEE4A1A2752517B00FB5186 /* Debug */,
+				DBEE4A1B2752517B00FB5186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBEE49DC2752517A00FB5186 /* Project object */;
+}
