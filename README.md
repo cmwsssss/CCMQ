@@ -42,7 +42,7 @@ concurrentQueue.maxConcurrentCount = 5;
 ```
 CCMQMessage *message = [[CCMQMessage alloc] init];
 //设置消息内容
-message.message = [NSString stringWithFormat:@"%ld", i];
+message.message = "Datas";
 [queue publish:message];
 ```
 
