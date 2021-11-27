@@ -47,7 +47,8 @@ message.message = [NSString stringWithFormat:@"%ld", i];
 ```
 
 ### 5.订阅消息队列：
-每一个订阅者都需要设置port，port代表该订阅者的身份标识，当APP重新启动时，CCMQ通过port来判断该向哪些订阅者恢复消息发送，**注意：当所有的port都ACK以后，才代表该消息发送完毕**
+每一个订阅者都需要设置port，port代表该订阅者的身份标识，当APP重新启动时，CCMQ通过port来判断该向哪些订阅者恢复消息发送。
+**注意：当所有的port都ACK以后，才代表该消息发送完毕**
 ```
 CCMQMessageSubscriber *subSerial = [[CCMQMessageSubscriber alloc] init];
 //设置订阅者的port号
