@@ -28,4 +28,32 @@ CCDB支持 iOS 6 以上
 待定
 ### 3.初始化队列：
 ```
+//串行队列
+CCMQMessageQueue *searialQueue = [[FAMessageQueue alloc] initWithType:FAMessageQueueTypeSerial tag:@"serial"]
+
+//并行队列
+CCMQMessageQueue *concurrentQueue = [[FAMessageQueue alloc] initWithType:FAMessageQueueTypeConcurrent tag:@"concurrent"];
+//设置并行发送的消息数量
+concurrentQueue.maxConcurrentCount = 5;
+```
+
+### 4.发送消息：
+通过调用以下的方法，CCMQ会向订阅者发送消息
+```
+CCMQMessage *message = [[CCMQMessage alloc] init];
+//设置消息内容
+message.message = [NSString stringWithFormat:@"%ld", i];
+[queue publish:message];
+```
+
+### 5.订阅消息队列：
+每一个订阅者都需要设置port，port代表该订阅者的身份标识，当APP重新启动时，CCMQ通过port来判断该向哪些订阅者恢复消息发送。
+```
+CCMQMessageSubscriber *subSerial = [[CCMQMessageSubscriber alloc] init];
+//设置订阅者的port号
+subSerial.port = @"sub1";
+subSerial.subscribe = ^(CCMQMessage * _Nonnull message) {
+    //订阅者可以在这里处理收到的消息
+};
+[queue addSubscriber:subSerial];
 ```
