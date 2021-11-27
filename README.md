@@ -29,10 +29,10 @@ pod 'CCMQ'
 ### 3.初始化队列：
 ```
 //串行队列
-CCMQMessageQueue *searialQueue = [[FAMessageQueue alloc] initWithType:FAMessageQueueTypeSerial tag:@"serial"]
+CCMQMessageQueue *searialQueue = [[CCMQMessageQueue alloc] initWithType:CCMQMessageQueueTypeSerial tag:@"serial"]
 
 //并行队列
-CCMQMessageQueue *concurrentQueue = [[FAMessageQueue alloc] initWithType:FAMessageQueueTypeConcurrent tag:@"concurrent"];
+CCMQMessageQueue *concurrentQueue = [[CCMQMessageQueue alloc] initWithType:CCMQMessageQueueTypeConcurrent tag:@"concurrent"];
 //设置并行发送的消息数量
 concurrentQueue.maxConcurrentCount = 5;
 ```
