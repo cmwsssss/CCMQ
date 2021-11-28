@@ -23,16 +23,16 @@ CCMQ的会对消息进行持久化，意味着消息队列内的消息不会因�
 ## 使用教程
 
 ### 1.环境要求：
-CCDB支持 iOS 6 以上
+CCMQ支持 iOS 6 以上
 ### 2.安装：
-待定
+pod 'CCMQ'
 ### 3.初始化队列：
 ```
 //串行队列
-CCMQMessageQueue *searialQueue = [[FAMessageQueue alloc] initWithType:FAMessageQueueTypeSerial tag:@"serial"]
+CCMQMessageQueue *searialQueue = [[CCMQMessageQueue alloc] initWithType:CCMQMessageQueueTypeSerial tag:@"serial"]
 
 //并行队列
-CCMQMessageQueue *concurrentQueue = [[FAMessageQueue alloc] initWithType:FAMessageQueueTypeConcurrent tag:@"concurrent"];
+CCMQMessageQueue *concurrentQueue = [[CCMQMessageQueue alloc] initWithType:CCMQMessageQueueTypeConcurrent tag:@"concurrent"];
 //设置并行发送的消息数量
 concurrentQueue.maxConcurrentCount = 5;
 ```
@@ -42,12 +42,14 @@ concurrentQueue.maxConcurrentCount = 5;
 ```
 CCMQMessage *message = [[CCMQMessage alloc] init];
 //设置消息内容
-message.message = [NSString stringWithFormat:@"%ld", i];
+message.message = "Datas";
 [queue publish:message];
 ```
 
 ### 5.订阅消息队列：
 每一个订阅者都需要设置port，port代表该订阅者的身份标识，当APP重新启动时，CCMQ通过port来判断该向哪些订阅者恢复消息发送。
+
+**注意：当所有的port都ACK以后，才代表该消息发送完毕**
 ```
 CCMQMessageSubscriber *subSerial = [[CCMQMessageSubscriber alloc] init];
 //设置订阅者的port号
