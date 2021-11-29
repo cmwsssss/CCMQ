@@ -23,6 +23,12 @@
 
 @implementation CCMQMessageQueue
 
+static NSMutableDictionary *s_queues;
+
++ (void)initialize {
+    s_queues = [[NSMutableDictionary alloc] init];
+}
+
 - (NSThread *)flushThread {
     if (!_flushThread) {
         _flushThread = [[NSThread alloc] initWithTarget:self selector:@selector(createRunloop) object:nil];
@@ -67,6 +73,7 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(flushNextMessage:) name:FLUSH_NEXT_MESSAGE object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageDidRemoved:) name:MESSAGE_DID_REMOVED object:nil];
         [CCMQMMAPFileManager initializeWithQueue:self];
+        [s_queues setObject:self forKey:self.tag];
     }
     return self;
 }
@@ -184,6 +191,15 @@
 
 - (void)MMAPFileLockUnLock {
     dispatch_semaphore_signal(self.mmapSemaphore);
+}
+
++ (CCMQMessageQueue *)getQueueWithTag:(NSString *)tag type:(CCMQMessageQueueType)type {
+    CCMQMessageQueue *queue = [s_queues objectForKey:tag];
+    if (!queue) {
+        queue = [[CCMQMessageQueue alloc] initWithType:type tag:tag];
+        queue.type = type;
+    }
+    return queue;
 }
 
 - (void)dealloc {

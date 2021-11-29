@@ -73,6 +73,16 @@ typedef NS_ENUM(NSUInteger, CCMQMessageQueueType) {
  */
 - (void)removeSubscriber:(CCMQMessageSubscriber *)subscriber;
 
+/**
+ @brief Get CCMQMessageQueue object by tag (通过tag获取CCMQMessageQueue对象)
+ @discussion If the queue does not exist, a queue will be created, and if it exists, an instance of the queue will be return (如果队列不存在，则会创建一个队列，如果存在，则会将获取该队列实例)
+ @param tag Tag of MessageQueue (队列的标识符)
+ @param type The type of the queue, if the queue does not exist, the queue will be created based on this type
+ (队列的类型，如果队列不存在，则会根据该类型创建队列)
+ @return a CCMQMessageQueue object
+ */
++ (CCMQMessageQueue *)getQueueWithTag:(NSString *)tag type:(CCMQMessageQueueType)type;
+
 @end
 
 NS_ASSUME_NONNULL_END
