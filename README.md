@@ -56,6 +56,9 @@ CCMQMessageSubscriber *subSerial = [[CCMQMessageSubscriber alloc] init];
 subSerial.port = @"sub1";
 subSerial.subscribe = ^(CCMQMessage * _Nonnull message) {
     //订阅者可以在这里处理收到的消息
+    ...
+    //对于手动ACK的队列，需要手动进行ACK回复
+    [queue finishMessage:message port:@"sub1"];
 };
 [queue addSubscriber:subSerial];
 ```
