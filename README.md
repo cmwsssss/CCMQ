@@ -19,7 +19,7 @@ CCMQ supports manual ACK, subscribers can manually reply ACK according to their 
 #### Resend mechanism
 CCMQ provides an automatic resend mechanism, when the subscriber timeout to send an ACK, CCMQ will perform a message retransmission
 
-#### Persistence
+### Persistence
 CCMQ persists messages, meaning that messages in the message queue will not be lost when the app is killed, and the message queue will resume sending messages after the app launch again.
 
 ## Getting Started
