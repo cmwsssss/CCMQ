@@ -16,10 +16,10 @@ CCMQ supports automatic ACK, when the message reaches the subscriber, the subscr
 #### Manual ACK:
 CCMQ supports manual ACK, subscribers can manually reply ACK according to their needs
 
-#### 3.Resend mechanism
+#### Resend mechanism
 CCMQ provides an automatic resend mechanism, when the subscriber timeout to send an ACK, CCMQ will perform a message retransmission
 
-#### 4.Persistence
+#### Persistence
 CCMQ persists messages, meaning that messages in the message queue will not be lost when the app is killed, and the message queue will resume sending messages after the app launch again.
 
 ## Getting Started
@@ -50,7 +50,7 @@ message.message = "Datas";
 [queue publish:message];
 ```
 
-### 5.Subscribe to the message queue：
+### Subscribe to the message queue：
 Each subscriber needs to set a port, which means the identity of that subscriber. When the APP is restarted, CCMQ uses port to determine which subscribers to resume sending messages to
 
 **Note: When all ports reply ACK, it means the message is finished sending**
