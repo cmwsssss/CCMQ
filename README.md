@@ -62,7 +62,7 @@ subSerial.port = @"sub1";
 subSerial.subscribe = ^(CCMQMessage * _Nonnull message) {
     //Handle incoming messages here
     ...
-    //For queues with manual ACKs, you need to do the ACK reply manually
+    //For queues with manual ACK, you need to do the ACK reply manually
     [queue finishMessage:message port:@"sub1"];
 };
 [queue addSubscriber:subSerial];
